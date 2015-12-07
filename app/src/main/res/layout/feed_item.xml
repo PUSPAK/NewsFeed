@@ -1,0 +1,125 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+android:orientation="vertical"        >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/feed_item_padding_left_right"
+        android:paddingRight="@dimen/feed_item_padding_left_right"
+        android:paddingTop="@dimen/feed_item_status_pad_left_right"
+        android:paddingBottom="@dimen/feed_item_status_pad_left_right"
+     >
+
+       <RelativeLayout
+           android:layout_width="fill_parent"
+           android:layout_height="70dip"
+android:layout_marginRight="110dip"           android:layout_alignParentLeft="true"
+           android:orientation="vertical">
+           <TextView
+               android:id="@+id/type"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@color/headercolor"
+               android:text="hello"
+               android:gravity="center|left"
+               android:layout_above="@+id/name"
+               android:textStyle="bold"
+               android:textSize="@dimen/textsmall" />
+           <TextView
+               android:id="@+id/name"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@color/textcolor"
+               android:text="hello"
+android:layout_alignParentLeft="true"
+               android:maxLines="2"
+               android:layout_centerInParent="true"
+               android:textSize="@dimen/textbig"
+               android:textStyle="bold" />
+
+
+           </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="90dip"
+            android:layout_height="90dip"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/feed_item_paddingt"
+            android:orientation="vertical">
+            <ProgressBar
+                android:id="@+id/progressimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                style="?android:attr/progressBarStyleSmall"
+
+                android:layout_gravity="center"/>
+            <ImageView
+                android:id="@+id/feedimage"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY"
+                 >
+            </ImageView>
+            </RelativeLayout>
+
+
+    </RelativeLayout>
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/feed_item_padding_left_right"
+            android:paddingRight="@dimen/feed_item_padding_left_right"
+            android:paddingTop="@dimen/feed_item_status_pad_left_right"
+            android:paddingBottom="@dimen/feed_item_status_pad_left_right"
+         >
+        <TextView
+            android:id="@+id/news"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/textsmall"
+            android:maxLines="5"
+            />
+
+    </LinearLayout>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/feed_item_padding_left_right"
+            android:paddingRight="@dimen/feed_item_padding_left_right"
+            android:paddingTop="@dimen/feed_item_status_pad_left_right"
+            android:paddingBottom="@dimen/feed_item_status_pad_left_right"
+            >
+<ImageView
+    android:layout_width="15dp"
+    android:layout_height="15dp"
+    android:layout_toLeftOf="@+id/share"
+    android:layout_centerInParent="true"
+    android:id="@+id/like"
+    android:layout_marginRight="@dimen/feed_like_space"
+    android:background="@drawable/like"/>
+            <ImageView
+                android:id="@+id/share"
+                android:layout_width="10dp"
+                android:layout_height="15dp"
+                android:layout_marginRight="@dimen/feed_item_status_pad_left_right"
+
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/subscriptionshare"/>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
