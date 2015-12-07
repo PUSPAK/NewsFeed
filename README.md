@@ -1,0 +1,2 @@
+# NewsFeed
+In this application i have written a class which has been fetching data from rss feeds. Any rss feed can be fetched from this code. I am using RSS Reader and Rss Handler class for this purpose. The feeds are showing title, image and description of Feeds. First time it will be loaded from URL, next time it will be loaded from local db .Secondly User can like a feed and the like user can check even after it restarts the app .Through share user can share the link with social share.
